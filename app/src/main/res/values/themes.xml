@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculatrice" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Calculatrice" parent="Base.Theme.Calculatrice" />
+
+    <style name="operationbutton" parent="communbutton">
+        <item name="android:textColor">@color/btnBackground2</item>
+    </style>
+
+    <style name="digitbutton" parent="communbutton">
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="communbutton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">36dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="operationbuttonSientific" parent="communbuttonScientific">
+        <item name="android:textColor">@color/btnBackground2</item>
+    </style>
+
+    <style name="digitbuttonScientific" parent="communbuttonScientific">
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="communbuttonScientific" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">36dp</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+</resources>

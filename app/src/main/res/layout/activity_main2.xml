@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="0.5dp"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_marginTop="0.1dp"
+        android:layout_marginLeft="0.9dp"
+        android:layout_marginRight="0.1dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/textView_input_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:textColor="@color/btnBackground2"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_2nd"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="2nd"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_pi"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="π"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_expo"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="e"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_clear"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="C"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_backspace"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            app:icon="@drawable/baseline_backspace_24"
+            app:iconTint="@color/btnBackground2"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_pow2"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="x²"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_Inverse"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="1/x"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ValeureAbsolue"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="|x|"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_exponentielle"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="exp"
+            android:textAllCaps="false"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_modulo"
+            style="@style/operationbuttonSientific"
+            android:textSize="12dp"
+            android:text="mod"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_racineCarree"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="²√x"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_parOuvrante"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="("
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_parFermante"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text=")"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_factorielle"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="n!"
+            android:textAllCaps="false"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_division"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="\u00F7"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_puissance"
+            style="@style/operationbuttonSientific"
+            android:textSize="19dp"
+            android:text="xⁿ"
+            android:textAllCaps="false"
+
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_seven"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="7"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_eight"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="8"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_nine"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="9"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_multiplication"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="x"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_10puissancex"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="10ⁿ"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_four"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="4"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_five"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="5"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_six"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_subtraction"
+            style="@style/operationbuttonSientific"
+            android:text="-"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_log"
+            style="@style/operationbuttonSientific"
+            android:textSize="16dp"
+            android:text="log"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_one"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="1"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_two"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="2"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_three"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="3"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_addition"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="+"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ln"
+            style="@style/operationbuttonSientific"
+            android:textSize="20dp"
+            android:text="ln"
+            android:textAllCaps="false"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_plusmoins"
+            style="@style/operationbuttonSientific"
+            android:textSize="20dp"
+            android:text="+/-"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_zero"
+            style="@style/digitbuttonScientific"
+            android:textSize="22dp"
+            android:text="0"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dot"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="."
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_equal"
+            style="@style/operationbuttonSientific"
+            android:textSize="22dp"
+            android:text="="
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btnBackground2"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
