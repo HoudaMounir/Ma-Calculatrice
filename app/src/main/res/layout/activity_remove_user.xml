@@ -24,10 +24,12 @@
             android:layout_marginTop="20dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginEditText"
                 android:layout_width="341dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
                 android:drawableStart="@drawable/baseline_person_24"
                 android:drawablePadding="5dp"
                 android:hint="Login" />
@@ -36,16 +38,48 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/LoginBtn"
+        android:id="@+id/button_suppUser"
         android:layout_width="316dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="408dp"
-        android:background="@drawable/login_btn"
+        android:layout_marginBottom="424dp"
+        android:backgroundTint="@color/btnBackground2"
         android:text="REMOVE USER"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_AddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/button_Add"
+        app:layout_constraintEnd_toEndOf="@id/button_Add"
+        android:src="@drawable/baseline_person_add_24"
+        android:backgroundTint="@color/white">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_Add"
+        style="@style/communbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/btnBackground2"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_add_24"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
