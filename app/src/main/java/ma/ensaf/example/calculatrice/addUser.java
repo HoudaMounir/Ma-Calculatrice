@@ -62,9 +62,9 @@ public class addUser extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String login = loginEditText.getText().toString().trim();
-                String password = loginEditText.getText().toString().trim();
-                String nom = loginEditText.getText().toString().trim();
-                String prenom = loginEditText.getText().toString().trim();
+                String password = passwordEditText.getText().toString().trim();
+                String nom = nomEditText.getText().toString().trim();
+                String prenom = prenomEditText.getText().toString().trim();
 
                 try {
                     mydb.addUser(login, password, nom, prenom);

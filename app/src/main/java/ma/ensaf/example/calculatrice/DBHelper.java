@@ -26,7 +26,6 @@ public class DBHelper extends SQLiteOpenHelper {
                 "prenom TEXT);";
         db.execSQL(createTableQuery);
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
     }
