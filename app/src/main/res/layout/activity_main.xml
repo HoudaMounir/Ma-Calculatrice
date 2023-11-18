@@ -222,7 +222,7 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_zero"
-            style="@style/operationbutton"
+            style="@style/digitbutton"
             android:textSize="22dp"
             android:text="0"
             />
